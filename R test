@@ -1,0 +1,39 @@
+> res = benchmark_std()
+# Programming benchmarks (5 tests):
+	3,500,000 Fibonacci numbers calculation (vector calc): 0.165 (sec).
+	Grand common divisors of 1,000,000 pairs (recursion): 4.45 (sec).
+	Creation of a 3,500 x 3,500 Hilbert matrix (matrix calc): 0.171 (sec).
+	Creation of a 3,000 x 3,000 Toeplitz matrix (loops): 1.24 (sec).
+	Escoufier's method on a 60 x 60 matrix (mixed): 65.4 (sec).
+# Matrix calculation benchmarks (5 tests):
+	Creation, transp., deformation of a 5,000 x 5,000 matrix: 0.397 (sec).
+	2,500 x 2,500 normal distributed random matrix^1,000: 0.146 (sec).
+	Sorting of 7,000,000 random values: 0.619 (sec).
+	2,500 x 2,500 cross-product matrix (b = a' * a): 7.16 (sec).
+	Linear regr. over a 5,000 x 500 matrix (c = a \ b'): 0.599 (sec).
+# Matrix function benchmarks (5 tests):
+	Cholesky decomposition of a 3,000 x 3,000 matrix: 3.94 (sec).
+	Determinant of a 2,500 x 2,500 random matrix: 1.93 (sec).
+	Eigenvalues of a 640 x 640 random matrix: 0.429 (sec).
+	FFT over 2,500,000 random values: 0.117 (sec).
+	Inverse of a 1,600 x 1,600 random matrix: 1.58 (sec).
+  
+  
+upload_results(res)
+Creating temporary file
+Getting system specs. This can take a while on Macs
+Uploading results
+sysctl: unknown oid 'machdep.cpu.vendor'
+Upload complete
+Tracking id: 2021-02-02-899252
+[1] "2021-02-02-899252"
+Warning message:
+In system("sysctl -n machdep.cpu.vendor", intern = TRUE) :
+  running command 'sysctl -n machdep.cpu.vendor' had status 1
+> plot(res)
+You are ranked 749 out of 749 machines.
+Press return to get next plot 
+You are ranked 96 out of 747 machines.
+Press return to get next plot 
+You are ranked 116 out of 747 machines.
+2021-02-02 16:05:03.389 R[4925:107307] +[NSSavePanel _warmUp] attempted warmup
